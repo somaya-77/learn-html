@@ -1,0 +1,39 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.interview {
+    background-image: url(../images/abstract-g8f1f181a8_1920.jpg);
+    color: #fff;
+    padding: 0 150px;
+}
+
+.title-html {
+    padding: 45px 0;
+    text-align: center;
+
+}
+.title-html h3 {
+    font-weight: bold;
+    font-size: 40px;
+}
+.contain-html .item h4 {
+    margin-top: 10px;
+    color: #feb200;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    font-size: 30px;
+}
+.contain-html .item p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+img{
+    display: block; 
+    width: 90%; 
+    margin: 5px auto;
+}

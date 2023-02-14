@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Open+Sans:wght@300;400;700&family=Outfit:wght@300;400;600&family=Patrick+Hand&family=Poppins:ital,wght@0,400;1,200;1,600&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Learn HTML</title>
+</head>
+<body>
+    <main>
+        <!-- HEADER -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>HTML<span>.</span></h1>
+                </div>
+            </nav>
+            <nav>
+                <menu>
+                    <li><a href="#home">Home</a></li>
+                    <li class="ele"><a href="#elements">Elements</a>
+                        <ul class="it">
+                            <li><a href="#link">Link/List</a></li>
+                            <li><a href="#images">Image</a></li>
+                            <li><a href="#audio">Audio/Video</a></li>
+                            <li><a href="#form">Form</a></li>
+                            <li><a href="#table">Table</a></li>
+                            <li><a href="#formatting">Formatting</a></li>
+                        </ul>
+                    </li>
+                    <li><a target="_blank" href="html/attributes.html">Attributes</a></li>
+                    <li><a target="_blank" href="html/review.html">Intervew</a></li>
+                </menu>
+            </nav>
+        </header>
+        <!--// HEADER //-->
+        <!-- ########################################################################################################################################## -->
+        <section id="home">
+            <div class="bg">
+                <div class="container">
+                    <!-- HOME PAGE -->
+                    <div class="content-home shadow">
+                        <div class="title-home">
+                            <h2><span>HTML</span> Tutorial</h2>
+                            <p>It is for Hyper Text Markup Language, the standard markup language for creating Web pages, describes the structure of a Web page & consists of a series of elements.</p>
+                        </div>
+        
+                        <!-- CARDS -->
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="card shadow p-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Elements</h5>
+                                        <p class="card-text">Elements are a component of HTML that contains opening tag and closing tag. used to denote document parts such as headers, paragraphs and footers.</p>
+                                        <div class="btn">
+                                            <a target="_blank" href="images/html-element-diagram.png" class="btn btn-primary shadow">View</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-5">
+                                <div class="card shadow p-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Attributes</h5>
+                                        <p class="card-text">Attributes are an HTML component that sets the behavior of an element or its layout in other languages that contains name and value.</p>
+                                        <div class="btn">
+                                            <a target="_blank" href="images/html-attributes.png" class="btn btn-primary shadow">View</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <!--// CARDS //-->
+                    </div>
+                    <!--// HOME PAGE //-->
+                </div>
+            </div>
+            <button class="pdf"><a href="revision html.pdf" download>Download PDF</a></button>
+        </section>
+
+        <!-- ############################################################################################################################################### -->
+
+        <section  id="elements">
+            <!-- SECTION CONTAIN -->
+        <div class="section-element">
+            <div class="container">
+                <div class="row">
+                    <div class="contain-section-tags">
+                        <div class="title">
+                            <h2><b>HTML Element Reference:</b></h2><hr>
+                            <h5>Basic HTML</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- ROW -->
+                <div class="row">
+                    <!-- COL -->
+                    <div class="col-sm-2">
+                        <div class="block">
+                            <div class="front face">
+                                <p>&#60;!-- --&#62;</p>
+                            </div>
+                            
+                            <div class="back face">
+                                <span>Defines a comment.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div class="block">
+                            <div class="front face">
+                                <p>&#60;!DOCTYPE&#62;</p>
+                            </div>
+                            
+                            <div class="back face">
+                                <span>Defines the document type.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div class="block">
+                            <div class="front face">
+                                <p>&#60;html&#62;</p>
+                            </div>
+                            
+                            <div class="back face">
+                                <span>Defines an HTML document.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div class="block">
+                            <div class="front face">
+                                <p>&#60;head&#62;</p>
+                            </div>
+                            
+                            <div class="back face">
+                                <span>Contains metadata/information for the document.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div class="block">
+                            <div class="front face">
+                                <p>&#60;title&#62;</p>
+                            </div>
+                            
+                            <div class="back face">
+                                <span>Defines a title for the document.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div class="block">
+                            <div class="front face">
+                                <p>&#60;body&#62;</p>
+                            </div>
+                            
+                            <div class="back face">
+                                <span>Defines the document's body.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// COL //-->
+                </div>
+                <!-- ROW -->
+
+                <div class="tow-row">
+                    
+                    <div class="row pt-3">
+                        
+                        <div class="col-sm-2">
+                            <div class="block">
+                                <div class="front face">
+                                    <p>&#60;h1&#62;to&#60;h6&#62;</p>
+                                </div>
+                                
+                                <div class="back face">
+                                    <span>Defines HTML headings.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <div class="block">
+                                <div class="front face">
+                                    <p>&#60;p&#62;</p>
+                                </div>
+                                
+                                <div class="back face">
+                                    <span>Defines a paragraph.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <div class="block">
+                                <div class="front face">
+                                    <p>&#60;br&#62;</p>
+                                </div>
+                                
+                                <div class="back face">
+                                    <span>Inserts a single line break.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <div class="block">
+                                <div class="front face">
+                                    <p>&#60;hr&#62;</p>
+                                </div>
+                                
+                                <div class="back face">
+                                    <span>Defines a thematic change in the content.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!--// SECTION CONTAIN //-->
+        </section>
+
+        <!-- ############################################################################################################################################### -->
+
+        <section class="links" id="link">
+            <!-- ELEMENT -->
+            <div class="bg-element mt-5 pt-5 mb-5 pb-5">
+                <div class="container">
+                    
+                    <!-- Accordion -->
+                    <div class="accordion">
+                        <h5 class="accordion-title">Links / Lists</h5>
+
+                        <div class="content-container">
+                            <div class="question">&#60;a&#62;</div>
+                            <div class="answer">Defines a hyperlink. <br> <span> معرف الارتباط التشعبي </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;link&#62;</div>
+                            <div class="answer">Defines the relationship between a document and an external resource. <br> <span>    </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;nav&#62;</div>
+                            <div class="answer">Defines navigation links. <br> <span> لتحديد روابط التنقل </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;ul&#62;</div>
+                            <div class="answer">Defines an unordered list. <br> <span> لتحديد قوائم غير مرتبة </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;ol&#62;</div>
+                            <div class="answer">Defines an ordered list. <br> <span>  لتحديد قوائم مرتبة  </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;li&#62;</div>
+                            <div class="answer">Defines a list item. <br> <span> لتحديد عنصر القائمة </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;dl&#62;</div>
+                            <div class="answer">Defines a description list. <br> <span> لتحديد قائمة وصفية </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;dt&#62;</div>
+                            <div class="answer">Defines a term/name in a description list. <br> <span> اسم القائمة الوصفية </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;dd&#62;</div>
+                            <div class="answer">Defines a description of a term/name in a description list. <br> <span> وصف القائمة </span> </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> 
+            <!--// ELEMENT //-->
+        </section>
+
+        <!-- ############################################################################################################################################### -->
+
+        <section class="image" id="images">
+            <!-- ELEMENT -->
+            <div class="bg-element mt-5 pt-5 mb-5 pb-5">
+                <div class="container">
+                    
+                    <!-- Accordion -->
+                    <div class="accordion">
+                        <h5 class="accordion-title">Images</h5>
+
+                        <div class="content-container">
+                            <div class="question">&#60;img&#62;</div>
+                            <div class="answer">Defines an image. <br> <span> معرف الصور </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;map&#62;</div>
+                            <div class="answer">Defines a client-side image map. <br> <span> تحديد خريطة الصورة للعميل </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;area&#62;</div>
+                            <div class="answer">Defines an area inside an image map. <br> <span> لتحديد منطقة داخل خريطة الصورة</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;canvas&#62;</div>
+                            <div class="answer">Used to drow graphics scripting (usually JS). <br> <span> تستخدم للرسومات عبر البرمجة النصية </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;figcaption&#62;</div>
+                            <div class="answer">Defines a caption for a &#60;figure&#62; element. <br> <span> لتوضيح تسمية العنصر </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;figure&#62;</div>
+                            <div class="answer">Specifies self-contained content. <br> <span> تحديد محتوي قائم بذاتة </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;picture&#62;</div>
+                            <div class="answer">Defines a container for multiple image resources. <br> <span> تحديد الصور المتعددة </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;svg&#62;</div>
+                            <div class="answer">Defines a container for SVG graphics. <br> <span> خاص بتحديد الرسومات </span> </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div> 
+            <!--// ELEMENT //-->
+        </section>
+
+        <!-- ############################################################################################################################################### -->
+
+        <section class="audio" id="audio">
+            <!-- ELEMENT -->
+            <div class="bg-element mt-5 pt-5 mb-5 pb-5">
+                <div class="container">
+                    
+                    <!-- Accordion -->
+                    <div class="accordion">
+                        <h5 class="accordion-title">Audio / Video</h5>
+
+                        <div class="content-container">
+                            <div class="question">&#60;iframe&#62;</div>
+                            <div class="answer">Defines an online frame. <br> <span> اضافة فيديو اونلاين  </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;audio&#62;</div>
+                            <div class="answer">Defines sound content. <br> <span> اضافة مقطع صوتي </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;source&#62;</div>
+                            <div class="answer">Defines multiple media resources for media elements. <br> <span> تحديد موارد الوسائط</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;video&#62;</div>
+                            <div class="answer">Defines a video or movie. <br> <span> اضافة مقطق فيديو </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;track&#62;</div>
+                            <div class="answer">Defines text tracks for media elements. <br> <span> تحديد مسارات النص لعناصر الوسائط  </span> </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div> 
+            <!--// ELEMENT //-->
+        </section>
+
+        <!-- ############################################################################################################################################### -->
+        
+        <section class="form" id="form">
+            <!-- ELEMENT -->
+            <div class="bg-element mt-5 pt-5 mb-5 pb-5">
+                <div class="container">
+                    
+                    <!-- Accordion -->
+                    <div class="accordion">
+                        <h5 class="accordion-title">Forms and Input</h5>
+
+                        <div class="content-container">
+                            <div class="question">&#60;form&#62;</div>
+                            <div class="answer">Defines an HTML form for user input. <br> <span> لإدخال المستخدم البيانات المطلوبة</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;input&#62;</div>
+                            <div class="answer">Defines an input control. <br> <span> يحدد عنصر تحكم الإدخال</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;textarea&#62;</div>
+                            <div class="answer">Defines a multiline input control. <br> <span>منطقة ادخال متعدد الاسطر</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;button&#62;</div>
+                            <div class="answer">Defines a clickable button. <br> <span>الزر القابل للنقر من قبل المستخدم</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;select&#62;</div>
+                            <div class="answer">Defines a drop-down list. <br> <span>قائمة منسدلة</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;optgroup&#62;</div>
+                            <div class="answer">Defines a group of releted options in a drop-down list. <br> <span>مجموعة قوائم منسدلة</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;option&#62;</div>
+                            <div class="answer">Defines an option in a drop-down list. <br> <span>يحدد خيارا في قائمة منسدلة</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;lable&#62;</div>
+                            <div class="answer">Defines a lable for an &#60;input&#62; element. <br> <span>يحدد تسمية المدخل</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;fieldset&#62;</div>
+                            <div class="answer"> Groups related elements in a form. <br> <span>المجموعات المرتبطة بعناصر النموذج</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;output&#62;</div>
+                            <div class="answer">Defines the result of a calculation. <br> <span></span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!--// ELEMENT //-->
+        </section>
+        
+        <!-- ############################################################################################################################################### -->
+
+        <section class="tables" id="table">
+            <!-- ELEMENT -->
+            <div class="bg-element  pt-5  pb-5">
+                <div class="container">
+                    
+                    <!-- Accordion -->
+                    <div class="accordion">
+                        <h5 class="accordion-title">Tables</h5>
+
+                        <div class="content-container">
+                            <div class="question">&#60;table&#62;</div>
+                            <div class="answer">Defines a table. <br> <span> محدد الجدول</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;caption&#62;</div>
+                            <div class="answer">Defines a table caption. <br> <span> عنوان للجدول</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;th&#62;</div>
+                            <div class="answer">Defines a header cell in a table. <br> <span>لتحديد الخلية الراسية للجدول</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;tr&#62;</div>
+                            <div class="answer">Defines a row in a table. <br> <span>لتحديد صف للجدول</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;td&#62;</div>
+                            <div class="answer">Defines a cell in a table. <br> <span>لتحديد خلية للجدول</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;thead&#62;</div>
+                            <div class="answer">Groups the header content in a table. <br> <span>لتجميع محتوي عناوين الجدول</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;tbody&#62;</div>
+                            <div class="answer">Groups the body content in a table. <br> <span>لتجميع المحتوي الاساسي للجدول</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;tfoot&#62;</div>
+                            <div class="answer">Groups the footer content in a table. <br> <span>لتحديد اطراف الجدول</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;col&#62;</div>
+                            <div class="answer"> Specifies column properties for each column within a &#60;colgroup&#62; element <br> <span> يحدد خصائص العمود لكل عمود داخل ملف </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;colgroup&#62;</div>
+                            <div class="answer">Specifies a group of one or more columns in a table for formatting. <br> <span>لتحديد عامود</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!--// ELEMENT //-->
+        </section>
+
+        <!-- ############################################################################################################################################### -->
+
+        <section class="formatting" id="formatting">
+            <!-- ELEMENT -->
+            <div class="bg-element mt-5 pt-5  pb-5">
+                <div class="container">
+
+                    <!-- Accordion -->
+                    <div class="accordion">
+                        <h5 class="accordion-title">Formatting</h5>
+
+                        <div class="content-container">
+                            <div class="question">&#60;abbr&#62;</div>
+                            <div class="answer">Defines an abbreviation or an acronym. <br> <span>يحدد اختصارا </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;address&#62;</div>
+                            <div class="answer">Defines contact information for the author/owner of a document/article. <br> <span> يحدد معلومات الاتصال لمالك او مؤلف المستند </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;b&#62;</div>
+                            <div class="answer">Defines bold text. <br> <span>لجعل النص سميك</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;bdi&#62;</div>
+                            <div class="answer">Isolates a part of text that might be formatted in a different direction from other text outside it. <br> <span>يعزل جزءًا من النص قد يتم تنسيقه في اتجاه مختلف عن النص الآخر</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;bdo&#62;</div>
+                            <div class="answer">Overrides the current text direction. <br> <span>يتجاوز اتجاه النص الحالي</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;blockquote&#62;</div>
+                            <div class="answer">Defines a section that is quoted from another source. <br> <span>يحدد قسمًا مقتبسًا من مصدر آخر </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;cite&#62;</div>
+                            <div class="answer">Defines the title of a work. <br> <span>يقوم بتحديد عنوان العمل</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;code&#62;</div>
+                            <div class="answer">Defines a piece of computer code. <br> <span>لجعل النص كنص الاكواد</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;del&#62;</div>
+                            <div class="answer">Defines text that has been deleted from a document. <br> <span>يحدد النص الذي تم حذفه</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;em&#62;</div>
+                            <div class="answer">Defines emphasized text . <br> <span>لجعل النص مائل </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;i&#62;</div>
+                            <div class="answer">Defines a part of text in an alternate voice or mood . <br> <span>يحدد جزءًا من النص بصوت</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;mark&#62;</div>
+                            <div class="answer">Defines marked/highlighted text . <br> <span>لتمييز النص بالون الاصفر</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;meter&#62;</div>
+                            <div class="answer">Defines a scalar measurement within a known range (a gauge) . <br> <span>يحدد قياسًا ضمن نطاق معروف (مقياس)</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;pre&#62;</div>
+                            <div class="answer">Defines preformatted text . <br> <span>يقوم بحساب المسافات بين النصوص </span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;small&#62;</div>
+                            <div class="answer">Defines smaller text . <br> <span>لتصغير حجم النص</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;sub&#62;</div>
+                            <div class="answer">Defines subscripted text . <br> <span>لجعل النص اسفل من باقي النصوص</span> </div>
+                        </div>
+
+                        <div class="content-container">
+                            <div class="question">&#60;sup&#62;</div>
+                            <div class="answer">Defines superscripted text . <br> <span>لجعل النص اعلي من باقي النصوص</span> </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> 
+            <!--// ELEMENT //-->
+
+        </section>
+    </main>
+    <script src="javascript/main.js"></script>
+</body>
+</html>
